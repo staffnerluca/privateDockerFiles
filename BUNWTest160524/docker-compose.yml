@@ -16,9 +16,10 @@ services:
       - ./data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: mydb
+      POSTGRES_PASSWORD: Test1! 
       POSTGRES_USER: user
-      POSTGRES_PASSWORD_USER: Test!
-  phpmyadmin:
+      POSTGRES_PASSWORD_USER: Test1!
+  pgadmin:
     image: dpage/pgadmin4
     container_name: ls_pgadmin
     ports:
